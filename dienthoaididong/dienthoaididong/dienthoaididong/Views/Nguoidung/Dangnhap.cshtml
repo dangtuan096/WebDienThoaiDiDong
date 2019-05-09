@@ -1,0 +1,159 @@
+﻿@{
+    ViewBag.Title = "Dangnhap";
+}
+
+
+@*<script src="~/Scripts/jquery-1.12.2.min.js"></script>
+<link href="~/Content/NguoidungCssLayOut/dangnhap.css" rel="stylesheet" />
+
+<section class="login">
+    <div class="titulo">Staff Login</div>
+    <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+
+        <input style="height:44px;width:240px" type="text" required title="Username required" placeholder="Username" data-icon="U" name="txttaikhoan">
+        <input style="height:44px;width:240px" type="password" required title="Password required" placeholder="Password" data-icon="x" name="txtmatkhau">
+        <div class="olvido">
+            <div class="col"><a href="#" title="Ver Carásteres">Register</a></div>
+            <div class="col"><a href="#" title="Recuperar Password">Fotgot Password?</a></div>
+        </div>
+        <button type="submit" id="btnsubmit" class="enviar" style="height:40px">
+            Đăng nhập
+        </button>
+    </form>
+
+    <h1 style="color:white; text-align:center"> @ViewBag.Thongbao</h1>
+
+</section>*@
+<html>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+<link rel="icon" type="image/png" href="~/Content/Login/img/favicon.ico" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/bootstrap.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/font-awesome.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/material-design-iconic-font.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/animate.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/hamburgers.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/animsition.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/select2.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/daterangepicker.css" rel="stylesheet" />
+<!--===============================================================================================-->
+<link href="~/Content/Login/css/util.css" rel="stylesheet" />
+<link href="~/Content/Login/css/main.css" rel="stylesheet" />
+<link href="~/Content/Login/css/loader.min.css" rel="stylesheet" />
+<!--===============================================================================================-->
+
+<body>
+
+    <div class="limiter">
+        <div class="container-login100" style="       background-image: url('../../Content/Login/img/bg-01.jpg');">
+            <form class="login100-form validate-form" action="#" method="post" id="login">
+                <a href="/Home/Index" style="font-size:20px;font-weight:bolder">Trang chủ</a>
+                <span class="login100-form-title p-b-49">
+                    Login
+                </span>
+
+                <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+                    <span class="label-input100">Username</span>
+                    <input class="input100" type="text" name="txttaikhoan" placeholder="Type your username">
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <span class="label-input100">Password</span>
+                    <input class="input100" type="password" name="txtmatkhau" placeholder="Type your password">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="text-right p-t-8 p-b-31">
+                    <a href="#">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+                </div>
+                <span>@ViewBag.ThongBao</span>
+
+                <div class="flex-c-m">
+                    <a href="#" class="login100-social-item bg1">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="login100-social-item bg2">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="login100-social-item bg3">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </div>
+
+                <div class="flex-col-c p-t-155">
+                    <span class="txt1 p-b-17">
+                        Or Sign Up Using
+                    </span>
+
+                    <a href="/User/Register" class="txt2">
+                        Sign Up
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/popper.js"></script>
+    <script src="~/Content/Login/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+
+    <script src="~/Content/Login/js/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/moment.min.js"></script>
+    <script src="~/Content/Login/js/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+
+    <script src="~/Content/Login/js/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Content/Login/js/main.js"></script>
+    <script src="~/Content/Login/js/Custome.js"></script>
+    <script src="js/main.js" type="4b1a584cb928c0a0b496fe30-text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="4b1a584cb928c0a0b496fe30-text/javascript"></script>
+    <script type="4b1a584cb928c0a0b496fe30-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script src="~/Content/Login/js/loader.min.js"></script>
+</body>
+
+</html>
+
+
+
+
